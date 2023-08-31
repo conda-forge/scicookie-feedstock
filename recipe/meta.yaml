@@ -1,5 +1,5 @@
 {% set name = "scicookie" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scicookie-{{ version }}.tar.gz
-  sha256: e17a7641a8c0ed6bc27e7826a0db45db4d6aa9dfc5e939ca7718df6ffb5030ac
+  sha256: ce559913fc8e5626c694efe73bb6378715c2195c06a1e9b60d0f94778cd306b4
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv 
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
